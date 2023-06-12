@@ -47,10 +47,8 @@ resource "aws_instance" "vm-jenkins" {
   source_dest_check      = false
   key_name               = aws_key_pair.key_pair.key_name
   
-  
-  
-  
   tags = {
     owner = "masters-of-destruction"
+    Name  = "vm-jenkins"
   }
 }
